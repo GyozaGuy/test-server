@@ -8,5 +8,29 @@
     <script src="main.bundle.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <test-comp>
+      <div>
+        <label>
+          Results 1: <span id="results1"></span>
+        </label>
+
+        <button id="reset1" type="button">Reset</button>
+      </div>
+      <div>
+        <label>
+          Results 2: <span id="results2"></span>
+        </label>
+
+        <button id="reset2" type="button">Reset</button>
+      </div>
+    </test-comp>
+
+    <button id="button1" type="button">Event 1</button>
+    <button id="button2" type="button">Event 2</button>
+
+    <another-comp>
+      <div id="data"></div>
+    </another-comp>
+  </body>
 </html>

@@ -8,5 +8,54 @@
     <script src="main.bundle.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <ui-layout-band background-color="#ecebea">
+      <ui-separator></ui-separator>
+
+      <ui-heading subheading="This is a subheading!">This is a heading</ui-heading>
+      <p>I am a paragraph inside a layout band.</p>
+
+      <ui-separator></ui-separator>
+    </ui-layout-band>
+
+    <ui-layout-band background-color="rebeccapurple">
+      <ui-row>
+        <input type="text"> <button type="button">Submit</button>
+      </ui-row>
+    </ui-layout-band>
+
+    <ui-separator></ui-separator>
+
+    <ui-card>
+      <p>This is in a card!</p>
+      <p>This is a paragraph within a card!</p>
+    </ui-card>
+
+    <ui-card background-color="grey" font-color="white">
+      <p>This is another card</p>
+    </ui-card>
+
+    <ui-layout-band background-color="teal">
+      <button id="openDialogButton" type="button">Open Dialog</button>
+
+      <dialog id="dialog">
+        <div id="dialogHeader" padding-size="sm">
+          <button class="closeDialogButton closeDialogHeaderButton" title="Close" type="button">❌</button>
+        </div>
+
+        <form method="dialog" padding-size="md">
+          <label>
+            Text:
+            <input autofocus name="text" type="text">
+          </label>
+
+          <button type="submit" value="submitted">Submit</button>
+        </form>
+
+        <div id="dialogFooter" padding-size="sm">
+          <button class="closeDialogButton" type="button">Close</button>
+        </div>
+      </dialog>
+    </ui-layout-band>
+  </body>
 </html>

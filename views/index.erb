@@ -12,7 +12,11 @@
     <ui-layout-band background-color="#ecebea">
       <ui-separator></ui-separator>
 
-      <ui-heading subheading="This is a subheading!">This is a heading</ui-heading>
+      <ui-heading>
+        This is a heading
+        <h4 slot="subheading">This is a subheading!</h4>
+      </ui-heading>
+
       <p>I am a paragraph inside a layout band.</p>
 
       <ui-separator></ui-separator>

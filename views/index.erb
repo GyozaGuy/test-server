@@ -39,6 +39,8 @@
       <p>This is another card</p>
     </ui-card>
 
+    <ui-separator></ui-separator>
+
     <ui-layout-band background-color="teal">
       <button id="openDialogButton" type="button">Open Dialog</button>
 
@@ -62,15 +64,17 @@
       </dialog>
     </ui-layout-band>
 
-    <ui-grid gap="10">
-      <div>1</div>
-      <div columns="2">2 (two columns wide)</div>
-      <div columns="4">3 (four columns wide)</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
+    <ui-separator></ui-separator>
+
+    <ui-grid>
+      <ui-card>1</ui-card>
+      <ui-card columns="2">2 (two columns wide)</ui-card>
+      <ui-card columns="4">3 (four columns wide)</ui-card>
+      <ui-card>4</ui-card>
+      <ui-card>5</ui-card>
+      <ui-card>6</ui-card>
+      <ui-card>7</ui-card>
+      <ui-card>8</ui-card>
     </ui-grid>
   </body>
 </html>

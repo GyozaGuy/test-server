@@ -55,7 +55,7 @@
             <input autofocus name="text" type="text">
           </label>
 
-          <button type="submit" value="submitted">Submit</button>
+          <button primary type="submit" value="submitted">Submit</button>
         </form>
 
         <div id="dialogFooter" padding-size="sm">
@@ -64,10 +64,10 @@
       </dialog>
     </ui-layout-band>
 
-    <ui-separator></ui-separator>
-
     <ui-grid>
-      <ui-card>1</ui-card>
+      <ui-card>
+        <ui-card background-color="green">1</ui-card>
+      </ui-card>
       <ui-card columns="2">2 (two columns wide)</ui-card>
       <ui-card columns="4">3 (four columns wide)</ui-card>
       <ui-card>4</ui-card>
@@ -76,5 +76,30 @@
       <ui-card>7</ui-card>
       <ui-card>8</ui-card>
     </ui-grid>
+
+    <ui-layout-band background-color="gold">
+      <ui-heading>Grid in Layout Band</ui-heading>
+
+      <ui-grid columns="6" no-padding>
+        <ui-card>Single column</ui-card>
+        <ui-card columns="2">Two columns</ui-card>
+        <ui-card columns="3">Three columns</ui-card>
+      </ui-grid>
+
+      <ui-separator></ui-separator>
+    </ui-layout-band>
+
+    <ui-layout-band background-color="#ecebea">
+      <ui-heading>Buttons</ui-heading>
+
+      <button type="button">Default</button>
+      <button minor type="button">Minor</button>
+      <button primary type="button">Primary</button>
+      <button success type="button">Success</button>
+      <button type="button" warning>Warning</button>
+      <button destructive type="button">Destructive</button>
+
+      <ui-separator></ui-separator>
+    </ui-layout-band>
   </body>
 </html>

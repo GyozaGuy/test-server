@@ -9,24 +9,19 @@
   </head>
 
   <body>
-    <ui-layout-band background-color="#ecebea">
+    <ui-band background-color="#ecebea">
       <ui-separator></ui-separator>
-
-      <ui-heading>
-        This is a heading
-        <h4 slot="subheading">This is a subheading!</h4>
-      </ui-heading>
 
       <p>I am a paragraph inside a layout band.</p>
 
       <ui-separator></ui-separator>
-    </ui-layout-band>
+    </ui-band>
 
-    <ui-layout-band background-color="rebeccapurple">
+    <ui-band background-color="rebeccapurple">
       <ui-row>
         <input type="text"> <button type="button">Submit</button>
       </ui-row>
-    </ui-layout-band>
+    </ui-band>
 
     <ui-separator></ui-separator>
 
@@ -41,7 +36,7 @@
 
     <ui-separator></ui-separator>
 
-    <ui-layout-band background-color="teal">
+    <ui-band background-color="teal">
       <button id="openDialogButton" type="button">Open Dialog</button>
 
       <dialog id="dialog">
@@ -62,7 +57,7 @@
           <button class="closeDialogButton" type="button">Close</button>
         </div>
       </dialog>
-    </ui-layout-band>
+    </ui-band>
 
     <ui-grid>
       <ui-card>
@@ -77,8 +72,8 @@
       <ui-card>8</ui-card>
     </ui-grid>
 
-    <ui-layout-band background-color="gold">
-      <ui-heading>Grid in Layout Band</ui-heading>
+    <ui-band background-color="gold">
+      <h1>Grid in Layout Band</h1>
 
       <ui-grid columns="6" no-padding>
         <ui-card>Single column</ui-card>
@@ -87,19 +82,19 @@
       </ui-grid>
 
       <ui-separator></ui-separator>
-    </ui-layout-band>
+    </ui-band>
 
-    <ui-layout-band background-color="#ecebea">
-      <ui-heading>Buttons</ui-heading>
+    <ui-band background-color="#ecebea">
+      <h1>Buttons</h1>
 
-      <button type="button">Default</button>
-      <button minor type="button">Minor</button>
-      <button primary type="button">Primary</button>
-      <button success type="button">Success</button>
-      <button type="button" warning>Warning</button>
-      <button destructive type="button">Destructive</button>
+      <ui-button>Default</ui-button>
+      <ui-button type="minor">Minor</ui-button>
+      <ui-button type="primary">Primary</ui-button>
+      <ui-button type="success">Success</ui-button>
+      <ui-button type="warning">Warning</ui-button>
+      <ui-button type="destructive">Destructive</ui-button>
 
       <ui-separator></ui-separator>
-    </ui-layout-band>
+    </ui-band>
   </body>
 </html>

@@ -40,24 +40,24 @@
     <ui-band background-color="teal">
       <ui-button id="openDialogButton">Open Dialog</ui-button>
 
-      <dialog id="dialog">
-        <div id="dialogHeader" padding-size="sm">
-          <button class="closeDialogButton closeDialogHeaderButton" title="Close" type="button">❌</button>
+      <ui-dialog>
+        <div slot="title">Dialog Title</div>
+
+        <div slot="content">
+          <form bleed method="dialog" padding-size="md">
+            <label>
+              Text:
+              <input autofocus name="text" type="text">
+            </label>
+
+            <button type="submit" value="submitted">Submit</button>
+          </form>
         </div>
 
-        <form method="dialog" padding-size="md">
-          <label>
-            Text:
-            <input autofocus name="text" type="text">
-          </label>
-
-          <button primary type="submit" value="submitted">Submit</button>
-        </form>
-
-        <div id="dialogFooter" padding-size="sm">
-          <ui-button class="closeDialogButton">Close</ui-button>
+        <div slot="footer">
+          <ui-button id="closeDialogButton">Close</ui-button>
         </div>
-      </dialog>
+      </ui-dialog>
     </ui-band>
 
     <ui-grid>

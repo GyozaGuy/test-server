@@ -6,6 +6,7 @@
     <title>Testing</title>
     <link href="main.css" rel="stylesheet">
     <script src="main.bundle.js"></script>
+    <script async defer src="https://sdk.virtualearth.net/api/maps/mapcontrol"></script>
   </head>
 
   <body>
@@ -95,6 +96,14 @@
       <ui-button type="destructive">Destructive</ui-button>
 
       <ui-separator></ui-separator>
+    </ui-band>
+
+    <ui-band bleed-bottom bleed-top>
+      <div style="height: 500px;">
+        <bing-map apiKey="AtzY1qAS7y310cCyw9CtBfmzr9IQjBrRRurI0QRBf046PPvJh9pEnI0wJGGB7LJY">
+          <push-pin latitude="23" longitude="53" text="53" pin-title="Pin!"></push-pin>
+        </bing-map>
+      </div>
     </ui-band>
   </body>
 </html>

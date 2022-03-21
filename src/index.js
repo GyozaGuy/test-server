@@ -1,6 +1,7 @@
 import 'nwc-library';
 import 'regenerator-runtime/runtime';
 
+import './components/BingMap/BingMap';
 import './index.css';
 
 document.addEventListener('DOMContentLoaded', () => {

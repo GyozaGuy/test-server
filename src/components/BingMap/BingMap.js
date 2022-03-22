@@ -44,7 +44,7 @@ class BingMap extends Component {
     });
   }
 
-  handleChildrenUpdate(target) {
+  handleChildrenUpdated(target) {
     if (!this.#map) {
       return;
     }
@@ -81,7 +81,7 @@ class BingMap extends Component {
 
   set #map(map) {
     this.#_map = map;
-    this.handleChildrenUpdate(this.shadowRoot.querySelector('slot'));
+    this.handleChildrenUpdated(this.shadowRoot.querySelector('slot'));
   }
 }
 

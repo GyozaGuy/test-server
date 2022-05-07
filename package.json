@@ -26,5 +26,9 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint src",
     "start": "webpack --config webpack.dev.js --watch"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/stimulus-webpack-helpers": "^1.0.1"
   }
 }

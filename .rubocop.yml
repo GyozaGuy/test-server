@@ -1,14 +1,56 @@
-Style/FrozenStringLiteralComment:
-  SupportedStyles: 'never'
+AllCops:
+  Exclude:
+    - "**/*.erb"
+    - db/migrate/*
+    - db/schema.rb
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: consistent
 
 Layout/FirstArrayElementIndentation:
-  EnforcedStyle: 'consistent'
+  EnforcedStyle: consistent
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
 
 Layout/FirstHashElementIndentation:
-  EnforcedStyle: 'consistent'
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
+Layout/FirstParameterIndentation:
+  EnforcedStyle: consistent
 
 Layout/LineLength:
   Max: 100
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodParameterLineBreaks:
+  Enabled: true
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Metrics/AbcSize:
+  Enabled: false
 
 Metrics/BlockLength:
   Max: 50
@@ -18,3 +60,12 @@ Metrics/ClassLength:
 
 Metrics/MethodLength:
   Max: 50
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  SupportedStyles: never
